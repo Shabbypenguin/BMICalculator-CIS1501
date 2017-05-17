@@ -47,16 +47,20 @@
         'First we need to declare some variables we will use
         Dim heightInput As Decimal
         Dim weightInput As Decimal
-
+        
+        'We want to make sure the user put a number and not a string otherwise the program will crash
         If Not IsNumeric(heightTextBox.Text) Then
+            'If they didn't then prompt them to put a number and return
             MessageBox.Show("Please enter in a height number")
             Exit Sub
         Else
             'Here we set the height variable based off user input
             heightInput = heightTextBox.Text
         End If
-
+        
+        'We want to make sure the user put a number and not a string otherwise the program will crash
         If Not IsNumeric(weightTextBox.Text) Then
+            'If they didn't then prompt them to put a number and return
             MessageBox.Show("Please enter in a weight number")
             Exit Sub
         Else
